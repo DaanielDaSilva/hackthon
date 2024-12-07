@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S Chat Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://esm.sh/@fortawesome/fontawesome-free@6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow-sm p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="w-48">
+                    <div class="font-bold text-xl"><img src="assets/imagens/logotipo.png" alt=""></div>
+                </div>
+                <div class="flex-1 mx-4">
+                    <div class="flex justify-between items-center bg-gray-50 rounded-lg p-4">
+                        <h1 class="text-xl font-semibold">SEJA BEM VINDO, CODIFICADORES</h1>
+                        <div class="bg-white rounded-lg px-4 py-2">
+                            <span class="font-medium">IA J.A.R.V.I.S</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-48">
+                    <div class="bg-gray-200 h-16 w-16 rounded-full mx-auto"><img src="assets/imagens/usuario.png" alt=""></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 container mx-auto mt-4 flex gap-4">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-white rounded-lg shadow-sm p-4">
+                <h2 class="font-semibold mb-4">Menu Lateral</h2>
+                <nav class="space-y-2">
+                    <a href="#" class="block p-2 hover:bg-gray-100 rounded transition">Home</a>
+                    <a href="#" class="block p-2 hover:bg-gray-100 rounded transition">Perfil</a>
+                    <a href="#" class="block p-2 hover:bg-gray-100 rounded transition">Configuraçoes</a>
+                    <a href="#" class="block p-2 hover:bg-gray-100 rounded transition">Ajuda</a>
+                    <a href="#" class="block p-2 hover:bg-gray-100 rounded transition">Sair</a>
+                </nav>
+            </aside>
+
+            <!-- Chat Area -->
+            <section class="flex-1 bg-white rounded-lg shadow-sm p-4">
+                <div class="h-[calc(100vh-16rem)] flex flex-col">
+                    <div class="flex-1 overflow-y-auto space-y-4 p-4">
+                        </div>
+                                <div class="robo">
+                                    <iframe
+                                        src="https://www.chatbase.co/chatbot-iframe/nUTrADkMzp4dcJGHh6lJA"
+                                        width="100%"
+                                        style="height: 100%; min-height: 700px"
+                                        frameborder="0"
+                                    ></iframe>
+                                </div>
+            </section>
+
+            <!-- System Info -->
+            <aside class="w-72 bg-white rounded-lg shadow-sm p-4">
+                <h2 class="font-semibold mb-4">Informaçoes do Sistema</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <p>Status: Online</p>
+                    </div>
+                    <p>Versão: 1.0.0</p>
+                    <div class="space-y-1">
+                        <p>Memoria: 4GB/16GB</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <p>CPU: 45% utilização</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    <p>Tempo Online: 2:30h</p>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
